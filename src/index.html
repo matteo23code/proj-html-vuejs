@@ -1,0 +1,177 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Avada Restaurant</title>
+    <script src="https://cdn.jsdelivr.net/npm/vue"></script>
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.5.0/css/all.css">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Lora&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Work+Sans:ital,wght@1,400&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="../dist/style-sass.css">
+</head>
+<body>
+    <div id="app-restaurant">
+
+        <!-- inizio header -->
+        <header id="head-container">
+            <nav class="navbar">
+                <div class="logo-title">
+                    <img :src="logo" alt="">
+                </div>
+                <div class="list">
+                    <ul>
+                        <li class="filter" v-for='(list, index) in navList' >
+                             <a href="">{{list.name}}</a>
+                             <ul class="home-drop">
+                                 <li class="filter-content"><a href="">{{list.hover1}}</a></li>
+                                 <li class="filter-content"><a href="">{{list.hover2}}</a></li>
+                             </ul>
+                          </li>
+                          <li class="filter">
+                                <a href="">
+                                  <i class="fa fa-shopping-cart" aria-hidden="true"></i>
+                                </a>
+                          </li>
+                    </ul>
+                </div>
+            </nav>
+            <div class="dark-box">
+                <div class="hr"></div>
+                <div class="dark-box-contain">
+                    <h6>THE BEST TABLE IN TOWN</h6>
+                    <span class="title">FINE DINING EXPERIENCE</span>
+                    <p>Pallentesque vitae viverra risus, sagittis.
+                       Venenatis ridiculus scelerisque nisi in urna nulla.
+                       Sit tempor a et nisl, ac felis. 
+                    </p>
+                    <button class="btn-explore">
+                        <a href="">
+                            <span class="btn-explore">EXPLORE THE MENU</span>
+                            <span class="btn-content">EXPLORE THE MENU</span>
+                        </a> 
+                    </button>
+                </div>
+            </div>
+            <div class="bg-box">
+
+            </div>
+            
+        </header>
+        <main id="main-container">
+           <div class="main-contain">
+               <div class="main-box-left">
+                   <p><b>HAC TELLUS, FELIS RISUS AT</b> mattis mattis. Eget euismod
+                    semper eget tortor,donec amet,blandit. Tristique facilisi faucibus
+                    elementum feugiat in nam in feugiat. Ipsum odio etiam duis 
+                    facilisis amet vulpante.
+                  </p>
+                  <h2>
+                      FOOD IS OUR COMMON <br>
+                      GROUND, A UNIVERSAL
+                      EXPERIENCE.
+                  </h2>
+                  <P>Tristique tempus condimentum diam donec.Condimentum
+                      ullacorper sit elementum hendrerit mi nulla in consequat,ut.
+                      Metus,nullam scelerisque netus viverra dui.
+                  </P>
+                    <span class="signature">
+                        <img src="../img/signature .jpg" alt="">
+                    </span>
+               </div>
+               <a href="">
+                 <div class="main-box-right">
+                   <div class="img-hover">
+
+                   </div>
+                 </div>
+               </a>
+               <div class="main-box-row">
+                   <div class="sushi-1">
+                       <img src="../img/sushi-1.png" alt="">
+                       <h3>THE BEST TABLE IN TOWN</h3>
+                       <div class="hr"></div>
+                       <p>
+                           Sed aenean egestas ut aliquam turpis mauris,
+                           molestie. Vitae tellus tempor sem id tempus 
+                           neque, tellus turpis turpis. Morbi tortor id 
+                           gravida aliquet.
+                        </p>
+                        <button class="btn-explore">
+                            <a href="">
+                                <span class="btn-explore">EXPLORE THE MENU</span>
+                            </a> 
+                        
+                   </div>
+                   <div class="sushi-2">
+                       <img src="../img/sushi-2.png" alt="">
+                       <h3>PERFECT FOR GROUP</h3>
+                       <div class="hr"></div>
+                       <p>
+                           Sed aenean egestas ut aliquam turpis mauris,
+                           molestie. Vitae tellus tempor sem id tempus 
+                           neque, tellus turpis turpis. Morbi tortor id 
+                           gravida aliquet.
+                        </p>
+                        <button class="btn-explore">
+                            <a href="">
+                                <span class="btn-explore">MAKE A RESERVATION</span>
+                            </a> 
+                   </div>
+                   <div class="sushi-3">
+                       <img src="../img/sushi-3.png" alt="">
+                       <h3>FRESH PRODUCE EVERYDAY</h3>
+                       <div class="hr"></div>
+                       <p>
+                           Sed aenean egestas ut aliquam turpis mauris,
+                           molestie. Vitae tellus tempor sem id tempus 
+                           neque, tellus turpis turpis. Morbi tortor id 
+                           gravida aliquet.
+                        </p>
+                        <button class="btn-explore">
+                            <a href="">
+                                <span class="btn-explore">LEAR MORE ABOUT US</span>
+                            </a> 
+
+                   </div>
+               </div>
+
+           </div>
+
+        </main>
+        
+
+
+    
+    
+    
+    
+    
+    
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+    </div>
+
+    <script  src="script.js" charset="utf-8"></script>
+</body>
+</html>

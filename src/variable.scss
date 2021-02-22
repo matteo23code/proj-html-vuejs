@@ -1,0 +1,24 @@
+@mixin reset{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Lora', serif;
+}
+
+@mixin reset-decoration{
+    text-decoration: none;
+    color: #fff;
+}
+
+@mixin button-menu {
+    margin-top: 40px;
+    padding: 10px 30px;
+    font-size: 14px;
+    transition: width 2s;
+    position: relative;
+}
+
+$bg-fine-dining: '../img/slider52x.jpg';
+$bg-rolls: '../img/hover-image1.png';
+$bg-rolls-hover: '../img/hover-image1.png';
+ 

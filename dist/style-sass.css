@@ -1,0 +1,218 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Lora", serif;
+}
+
+a {
+  text-decoration: none;
+  color: #fff;
+}
+
+#head-container {
+  height: 1010px;
+  display: flex;
+  justify-content: space-between;
+  position: relative;
+}
+#head-container .navbar {
+  width: 100%;
+  height: 50px;
+  z-index: 100;
+  position: absolute;
+  right: 0%;
+  padding-top: 140px;
+  display: flex;
+  justify-content: space-between;
+}
+#head-container .navbar .logo-title img {
+  width: 300px;
+  height: 60px;
+  position: absolute;
+  top: 40px;
+  left: 125px;
+}
+#head-container .navbar .list {
+  width: 50%;
+  height: 60px;
+  position: absolute;
+  top: 40px;
+  right: 95px;
+}
+#head-container .navbar .list .filter {
+  display: inline-block;
+  padding: 20px 0px 0px 50px;
+  font-size: 19px;
+  position: relative;
+}
+#head-container .navbar .list .home-drop {
+  color: #fff;
+  position: absolute;
+  top: 50px;
+  opacity: 0.8;
+  width: 200px;
+  display: none;
+}
+#head-container .navbar .list .filter-content {
+  background-color: #000;
+  font-size: 18px;
+  list-style-type: none;
+  line-height: 2.5;
+  border-bottom: 1px solid #fff;
+}
+#head-container .navbar .list .filter:hover .home-drop {
+  display: inline-block;
+}
+#head-container .dark-box {
+  width: 47%;
+  background-color: black;
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-start;
+  align-items: center;
+}
+#head-container .hr {
+  border-top: 1px solid #fff;
+  width: 50px;
+  height: 470px;
+  margin-left: 130px;
+}
+#head-container .dark-box-contain {
+  width: 400px;
+  margin-left: 50px;
+  color: #d6d6d6;
+  transition: all 5s;
+}
+#head-container .dark-box-contain h6 {
+  font-size: 16px;
+  margin-bottom: 40px;
+}
+#head-container .dark-box-contain .title {
+  font-size: 95px;
+  color: #fff;
+  margin: 20px 0;
+  font-family: "Bebas Neue", cursive;
+}
+#head-container .dark-box-contain p {
+  margin-top: 20px;
+  font-size: 19px;
+  line-height: 1.5;
+}
+#head-container .dark-box-contain .btn-explore {
+  margin-top: 40px;
+  padding: 10px 30px;
+  font-size: 14px;
+  transition: width 2s;
+  position: relative;
+  background-color: black;
+  color: #fff;
+}
+#head-container .dark-box-contain .btn-explore .btn-content {
+  background-color: #fff;
+  width: 100%;
+  padding: 10px 30px;
+  margin-top: 40px;
+  position: absolute;
+  bottom: 0;
+  right: 0;
+  color: #000;
+  display: none;
+}
+#head-container .dark-box-contain .explore:hover .btn-content {
+  display: block;
+}
+#head-container .bg-box {
+  width: 65%;
+  background-image: url("../img/slider52x.jpg");
+  background-size: cover;
+}
+
+#main-container {
+  background-color: #fff;
+}
+#main-container .main-contain {
+  width: 80%;
+  margin: 50px auto;
+}
+#main-container .main-contain .main-box-left {
+  width: 40%;
+  height: 940px;
+  float: left;
+  font-size: 20px;
+  padding-top: 50px;
+  line-height: 1.5;
+}
+#main-container .main-contain .main-box-left h2 {
+  padding: 50px 0;
+  font-size: 80px;
+  font-family: "Bebas Neue", cursive;
+}
+#main-container .main-contain .main-box-left .signature img {
+  margin-top: 40px;
+  width: 200px;
+}
+#main-container .main-contain .main-box-right {
+  width: 50%;
+  height: 940px;
+  float: right;
+  background-image: url("../img/hover-image1.png");
+  background-size: 100%;
+  background-position: 20%;
+}
+#main-container .main-contain .main-box-right .img-hover {
+  width: 780px;
+  height: 950px;
+  float: right;
+  background-image: url("../img/hover-image1.png");
+  background-size: 100%;
+  background-size: cover;
+  background-position: 20%;
+  transition-duration: 2s;
+  display: none;
+}
+#main-container .main-contain .main-box-right:hover .img-hover {
+  display: inline-block;
+}
+#main-container .main-contain .main-box-row {
+  width: 100%;
+  float: right;
+  display: flex;
+  justify-content: space-around;
+}
+#main-container .main-contain .main-box-row .sushi-1 {
+  width: 25%;
+  text-align: center;
+  padding: 0 15px;
+}
+#main-container .main-contain .main-box-row .sushi-2 {
+  width: 25%;
+  text-align: center;
+  padding: 0 15px;
+}
+#main-container .main-contain .main-box-row .sushi-3 {
+  width: 25%;
+  text-align: center;
+  padding: 0 15px;
+}
+#main-container .main-contain .main-box-row img {
+  margin-top: 50px;
+}
+#main-container .main-contain .main-box-row h3 {
+  margin: 20px 20px 0px 20px;
+  font-family: "Bebas Neue", sans-serif;
+  font-size: 30px;
+}
+#main-container .main-contain .main-box-row .hr {
+  border-bottom: 2px solid #ccc;
+  width: 100px;
+  margin: 20px auto;
+}
+#main-container .main-contain .main-box-row .btn-explore {
+  margin-top: 40px;
+  padding: 10px 30px;
+  font-size: 14px;
+  transition: width 2s;
+  position: relative;
+  color: #000;
+}
