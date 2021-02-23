@@ -46,40 +46,41 @@ a{
               position: relative;
             }    
               
-              .home-drop{
-                  color: #fff;
-                  position: absolute;
-                  top: 50px;
-                  opacity: 0.8; 
-                  width: 200px;
-                  display: none;
-                }
+            .home-drop{
+              color: #fff;
+              position: absolute;
+              top: 50px;
+              opacity: 0.8; 
+              width: 200px;
+              display: none;
+          }
                 
-                .filter-content{
-                    background-color: #000;
-                    font-size: 18px;
-                    list-style-type: none;
-                    line-height: 2.5;
-                    border-bottom: 1px solid #fff;
-                }
+            .filter-content{
+              background-color: #000;
+              font-size: 18px;
+              list-style-type: none;
+              line-height: 2.5;
+              border-bottom: 1px solid #fff;
+          }
 
-                .filter:hover .home-drop{
-                    display: inline-block;
-                }
+            .filter:hover .home-drop{
+              display: inline-block;
+          }
             
         }
     }
 
+    
     .dark-box{
         width: 47%;
-        background-color: black;
+        background-color: #030303;
         display: flex;
         flex-direction: row;
         justify-content: flex-start;
         align-items: center;
         
     }
-
+    
     .hr{
         border-top: 1px solid #fff;
         width: 50px;
@@ -87,55 +88,8 @@ a{
         margin-left: 130px;
     }
 
-    .dark-box-contain{
-        width: 400px;
-        margin-left: 50px;
-        color: rgb(214, 214, 214);
-        transition: all 5s;
-        
-        h6{
-            font-size: 16px;
-            margin-bottom: 40px;
-        }
-        
-        .title{
-            font-size: 95px;
-            color: #fff;
-            margin: 20px 0;
-            font-family: 'Bebas Neue', cursive;
-        }
-
-        p{
-            margin-top: 20px;
-            font-size: 19px;
-            line-height: 1.5;
-        }
-
-         .btn-explore{
-           @include button-menu;
-           background-color: black;
-           color: #fff;
-
-            
-            .btn-content{
-                background-color: #fff;
-                width: 100%;
-                padding: 10px 30px;
-                margin-top: 40px;
-                position: absolute;
-                bottom: 0;
-                right: 0;
-                color: #000;
-                display: none
-            }
-        }
-
-        .explore:hover .btn-content{
-           display: block; 
-        }
-
-    }
-
+    @include Dark-card;
+    
     .bg-box{
         width: 65%;
         background-image: url($bg-fine-dining);
@@ -144,11 +98,13 @@ a{
 }
 
 #main-container{
-    background-color: #fff;
     
-    .main-contain{
+    
+    .section1-contain{
         width: 80%;
+        height: 1500px;
         margin: 50px auto;
+
 
         .main-box-left{
             width: 40%;
@@ -232,7 +188,7 @@ a{
                 font-size: 30px;
             }
 
-            .hr{
+            .hr-2{
                 border-bottom: 2px solid #ccc;
                 width: 100px;
                 margin: 20px auto;
@@ -244,8 +200,127 @@ a{
                 color: #000;
                 
             }
+        }        
+    }
+
+    .section2-contain{
+        height: 800px;
+        display: flex;
+        justify-content: space-between;
+        position: relative;
+
+        .bg-box{
+            width: 65%;
+            background-image: url($bg-sushi);
+            background-size: cover;
         }
 
+        .hr{
+            border-top: 1px solid #fff;
+            width: 50px;
+            height: 600px;
+            margin-left: 130px;
+        }
 
+        .dark-box{
+        width: 47%;
+        background-color: #030303;
+        display: flex;
+        flex-direction: row;
+        justify-content: flex-start;
+        align-items: center;
+        
     }
+
+        @include Dark-card;
+    }
+
+  .section3-contain{
+    width: 1400px;
+    margin: 0 auto;
+    
+      .critics{
+          text-align: center;
+          padding: 50px 0;
+          font-size: 40px;
+      }
+
+      .cards-1{
+          width: 50%;
+          height: 800px;
+          border: 1px solid black;
+          float: left;
+          background-image: url($bg-cards-1);
+          background-position: left;
+          background-size: cover;
+      }
+
+      @include Dark-card;
+
+
+      .dark-box{
+        width: 47%;
+        height: 800px;
+        background-color: #030303;
+        display: flex;
+        flex-direction: row;
+        justify-content: flex-start;
+        align-items: center;
+    }
+
+    .vote li{
+        display:inline-block ;
+    }
+
+    .hr{
+        border-top: 1px solid #fff;
+        width: 70px;
+        margin: 60px 0;
+    }
+  }
+}
+
+#footer-container{
+
+  .footer-contain{  
+    height: 650px;
+    background-image: url($bg-footer);
+    background-size: cover;
+    background-position: center;
+    display: flex;
+    align-items: center;
+
+    .footer-content{
+        margin: 0 auto;
+        width: 1400px;
+        height: 280px;
+        text-align: center;
+        color: #fff;
+
+        p{
+            font-size: 19px;
+            line-height: 1.8;
+            margin: 40px 0;
+        }
+    }
+
+    .list2 li{
+        display: inline-block;
+        margin-right: 10px;
+       
+       
+
+        i{
+            padding: 15px 10px;
+            color: #000;
+            background-color: #d6cddb;
+            border-radius: 50%;
+        }
+    }
+}
+
+  .copyright{
+      height: 70px;
+      background-color: #030303;
+  }
 }

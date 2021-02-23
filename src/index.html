@@ -59,8 +59,12 @@
             </div>
             
         </header>
+        <!-- Fine header -->
+
+        <!-- inizio main -->
         <main id="main-container">
-           <div class="main-contain">
+            <!-- inizio prima section -->
+            <section class="section1-contain">
                <div class="main-box-left">
                    <p><b>HAC TELLUS, FELIS RISUS AT</b> mattis mattis. Eget euismod
                     semper eget tortor,donec amet,blandit. Tristique facilisi faucibus
@@ -87,11 +91,11 @@
                    </div>
                  </div>
                </a>
-               <div class="main-box-row">
+                <div class="main-box-row">
                    <div class="sushi-1">
                        <img src="../img/sushi-1.png" alt="">
                        <h3>THE BEST TABLE IN TOWN</h3>
-                       <div class="hr"></div>
+                       <div class="hr-2"></div>
                        <p>
                            Sed aenean egestas ut aliquam turpis mauris,
                            molestie. Vitae tellus tempor sem id tempus 
@@ -107,7 +111,7 @@
                    <div class="sushi-2">
                        <img src="../img/sushi-2.png" alt="">
                        <h3>PERFECT FOR GROUP</h3>
-                       <div class="hr"></div>
+                       <div class="hr-2"></div>
                        <p>
                            Sed aenean egestas ut aliquam turpis mauris,
                            molestie. Vitae tellus tempor sem id tempus 
@@ -122,7 +126,7 @@
                    <div class="sushi-3">
                        <img src="../img/sushi-3.png" alt="">
                        <h3>FRESH PRODUCE EVERYDAY</h3>
-                       <div class="hr"></div>
+                       <div class="hr-2"></div>
                        <p>
                            Sed aenean egestas ut aliquam turpis mauris,
                            molestie. Vitae tellus tempor sem id tempus 
@@ -133,13 +137,92 @@
                             <a href="">
                                 <span class="btn-explore">LEAR MORE ABOUT US</span>
                             </a> 
-
                    </div>
+                </div> 
+            </section>
+            <!-- fine prima section -->
+
+            <!-- inizio seconda section -->
+            <section class="section2-contain">
+               <div class="bg-box">
+
                </div>
+               <div class="dark-box">
+                <div class="hr"></div>
+                <div class="dark-box-contain">
+                    <h6>FINE DINING EXPERIENCE</h6>
+                    <span class="title">THE BEST TABLE IN TOWN</span>
+                    <p>Pallentesque vitae viverra risus, sagittis.
+                       Venenatis ridiculus scelerisque nisi in urna nulla.
+                       Sit tempor a et nisl, ac felis. 
+                    </p>
+                    <button class="btn-explore">
+                        <a href="">
+                            <span class="btn-explore">EXPLORE THE MENU</span>
+                            <span class="btn-content">EXPLORE THE MENU</span>
+                        </a> 
+                    </button>
+                </div>
+            </div>
 
-           </div>
-
+            </section>
+           <!-- fine seconda section -->
+           <!-- inizio terza section -->
+           <section class="section3-contain">
+                <div class="critics">
+                    <span>What critics are saying about us</span>
+                </div>
+                <div class="cards-1">
+                    
+                </div>
+                <div class="dark-box">
+                    <div class="dark-box-contain">
+                        <h6>MEGGY STEWART</h6>
+                        <span class="title">NEW YORK TIMES</span>
+                        <ul class="vote">
+                            <li><i class="fa fa-star" aria-hidden="true"></i></li>
+                            <li><i class="fa fa-star" aria-hidden="true"></i></li>
+                            <li><i class="fa fa-star" aria-hidden="true"></i></li>
+                            <li><i class="fa fa-star" aria-hidden="true"></i></li>
+                            <li><i class="fa fa-star" aria-hidden="true"></i></li>
+                        </ul>
+                        <div class="hr">
+                        </div>
+                        <p>Pallentesque vitae viverra risus, sagittis.
+                           Venenatis ridiculus scelerisque nisi in urna nulla.
+                           Sit tempor a et nisl, ac felis. 
+                        </p>
+                        <button class="btn-explore">
+                            <a href="">
+                                <span class="btn-explore">EXPLORE THE MENU</span>
+                                <span class="btn-content">EXPLORE THE MENU</span>
+                            </a> 
+                        </button>
+                    </div>
+                </div>
+           </section>
+            <!-- fine terza section -->
         </main>
+
+        <footer id="footer-container">
+            <div class="footer-contain">
+                <div class="footer-content">
+                    <img :src="logo" alt="">
+                    <p>Quam eu proin sit massa condimentum.Volutpat non pulvinar <br>
+                        aliquet nunc.Quanm eu proin sit massa condimentum.
+                    </p>
+                    <ul class="list2">
+                        <li  v-for='(list2, index) in socialList'>
+                            <i v-html='list2.social' aria-hidden="true"></i>
+                        </li>
+                    </ul>
+                </div>
+
+            </div>
+            <div class="copyright">
+
+            </div>
+        </footer>
         
 
 

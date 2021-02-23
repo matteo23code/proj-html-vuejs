@@ -18,7 +18,64 @@
     position: relative;
 }
 
+@mixin Dark-card{
+    
+
+    .dark-box-contain{
+        width: 400px;
+        margin-left: 50px;
+        color: rgb(214, 214, 214);
+        transition: all 5s;
+        
+        h6{
+            font-size: 16px;
+            margin-bottom: 40px;
+        }
+        
+        .title{
+            font-size: 95px;
+            color: #fff;
+            margin: 20px 0;
+            font-family: 'Bebas Neue', cursive;
+        }
+
+        p{
+            margin-top: 20px;
+            font-size: 19px;
+            line-height: 1.5;
+        }
+
+         .btn-explore{
+           @include button-menu;
+           background-color: black;
+           color: #fff;
+
+            
+            .btn-content{
+                background-color: #fff;
+                width: 100%;
+                padding: 10px 30px;
+                margin-top: 40px;
+                position: absolute;
+                bottom: 0;
+                right: 0;
+                color: #000;
+                display: none
+            }
+        }
+
+        .btn-explore:hover .btn-content{
+           display: block; 
+        }
+
+    }
+
+   
+}
+
 $bg-fine-dining: '../img/slider52x.jpg';
 $bg-rolls: '../img/hover-image1.png';
 $bg-rolls-hover: '../img/hover-image1.png';
- 
+$bg-sushi: '../img/slider32x.jpg';
+$bg-cards-1: '../img/blog72x-800x916.jpg';
+$bg-footer: '../img/footer2x.jpg';
