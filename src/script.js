@@ -26,13 +26,8 @@ new Vue({
             { social:'<i class="fab fa-instagram"></i>' },
 
             { social:'<i class="fab fa-linkedin-in"></i>'},
-
-
-
-            
         ],
        
-        
      },
 });
 Vue.config.devtools = true

@@ -22,7 +22,7 @@
                 </div>
                 <div class="list">
                     <ul>
-                        <li class="filter" v-for='(list, index) in navList' >
+                        <li class="filter" v-for='list in navList'>
                              <a href="">{{list.name}}</a>
                              <ul class="home-drop">
                                  <li class="filter-content"><a href="">{{list.hover1}}</a></li>
@@ -176,6 +176,7 @@
                     
                 </div>
                 <div class="dark-box">
+                    <div class="bg-hover"></div>
                     <div class="dark-box-contain">
                         <h6>MEGGY STEWART</h6>
                         <span class="title">NEW YORK TIMES</span>
@@ -195,15 +196,69 @@
                         <button class="btn-explore">
                             <a href="">
                                 <span class="btn-explore">EXPLORE THE MENU</span>
-                                <span class="btn-content">EXPLORE THE MENU</span>
+                               
                             </a> 
                         </button>
                     </div>
                 </div>
            </section>
             <!-- fine terza section -->
+            <!-- inizio quarta section -->
+            <section class="section4-contain">
+                <div class="guardian-box">
+                    <div class="row-black"></div>
+                    <div class="dark-box-contain">
+                        <h6>MARY MAXEY</h6>
+                        <span class="title">THE GUARDIANS</span>
+                        <ul class="vote">
+                            <li><i class="fa fa-star" aria-hidden="true"></i></li>
+                            <li><i class="fa fa-star" aria-hidden="true"></i></li>
+                            <li><i class="fa fa-star" aria-hidden="true"></i></li>
+                            <li><i class="fa fa-star" aria-hidden="true"></i></li>
+                            <li><i class="fa fa-star" aria-hidden="true"></i></li>
+                        </ul>
+                        <div class="hr">
+                        </div>
+                        <p>Non arcu mauris tortor ultrices mollis
+                            tellus euismod fermentum. Habitant amet
+                            tincidunt id sapien accumsan sed.
+                        </p>
+                        <button class="btn-article">
+                            <a href="">
+                                <span class="read-btn">READ FULL ARTICLE</span>
+                            </a> 
+                        </button>
+                    </div>
+                </div>
+                <div class="globe-box">
+                    <div class="row-black"></div>
+                   <div class="dark-box-contain">
+                        <h6>PATRICK MONROE</h6>
+                        <span class="title">GLOBE AND MAIL</span>
+                        <ul class="vote">
+                            <li><i class="fa fa-star" aria-hidden="true"></i></li>
+                            <li><i class="fa fa-star" aria-hidden="true"></i></li>
+                            <li><i class="fa fa-star" aria-hidden="true"></i></li>
+                            <li><i class="fa fa-star" aria-hidden="true"></i></li>
+                            <li><i class="fa fa-star" aria-hidden="true"></i></li>
+                        </ul>
+                        <div class="hr">
+                        </div>
+                        <p>Vivamus magna justo, lacinia eget
+                             consectetur sed, convallis at tellus. Nulla
+                              porttitor accumsan tincidunt.
+                        </p>
+                        <button class="btn-article">
+                            <a href="">
+                                <span class="read-btn">READ FULL ARTICLE</span>
+                            </a> 
+                        </button>
+                    </div>
+                </div>
+            </section>
+            <!-- fine quarta section -->
         </main>
-
+        <!-- inizio footer -->
         <footer id="footer-container">
             <div class="footer-contain">
                 <div class="footer-content">
@@ -212,18 +267,20 @@
                         aliquet nunc.Quanm eu proin sit massa condimentum.
                     </p>
                     <ul class="list2">
-                        <li  v-for='(list2, index) in socialList'>
-                            <i v-html='list2.social' aria-hidden="true"></i>
+                        <li  v-for='list2 in socialList'>
+                            <a href=""><i v-html='list2.social' aria-hidden="true"></i></a>
                         </li>
                     </ul>
                 </div>
 
             </div>
             <div class="copyright">
-
+                <div class="copyright-content">
+                    Copyright 2012 - 2019 Avada | All Rights Reserved | Powered by WordPress | ThemeFusion
+                </div>
             </div>
         </footer>
-        
+        <!-- fine footer -->
 
 
     

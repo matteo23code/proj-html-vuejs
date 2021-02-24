@@ -7,13 +7,15 @@
 a{
     @include reset-decoration;
 }
+// utility 
 
+/* inizio header */
 #head-container{
     height: 1010px;
     display: flex;
     justify-content: space-between;
     position: relative;
-
+    /* inizio navbar */
     .navbar{
         width: 100%;
         height: 50px;
@@ -69,7 +71,7 @@ a{
             
         }
     }
-
+    /* fine navbar */
     
     .dark-box{
         width: 47%;
@@ -83,12 +85,21 @@ a{
     
     .hr{
         border-top: 1px solid #fff;
+        margin-right: 20px;
         width: 50px;
         height: 470px;
         margin-left: 130px;
     }
 
     @include Dark-card;
+
+    .title{
+        font-size: 90px;
+        color: #fff;
+        margin: 20px 0;
+        font-family: 'Bebas Neue', cursive;
+    }
+
     
     .bg-box{
         width: 65%;
@@ -96,10 +107,12 @@ a{
         background-size: cover;
     }
 }
+ /* fine header */
 
+ /* inizio main page */
 #main-container{
     
-    
+    /* inizio section 1 */
     .section1-contain{
         width: 80%;
         height: 1500px;
@@ -153,6 +166,7 @@ a{
         .main-box-right:hover .img-hover{
             display: inline-block;
         }
+
         .main-box-row{
             width: 100%;
             float: right;
@@ -202,7 +216,9 @@ a{
             }
         }        
     }
+    /* fine section 1 */
 
+    /* inizio section 2 */
     .section2-contain{
         height: 800px;
         display: flex;
@@ -217,8 +233,9 @@ a{
 
         .hr{
             border-top: 1px solid #fff;
+            margin-right: 20px;
             width: 50px;
-            height: 600px;
+            height: 400px;
             margin-left: 130px;
         }
 
@@ -232,9 +249,18 @@ a{
         
     }
 
-        @include Dark-card;
+    .title{
+        font-size: 65px;
+        color: #fff;
+        margin: 20px 0;
+        font-family: 'Bebas Neue', cursive;
     }
 
+        @include Dark-card;
+    }
+    /* fine section 1 */
+
+    /* inizio section 3 */
   .section3-contain{
     width: 1400px;
     margin: 0 auto;
@@ -248,7 +274,6 @@ a{
       .cards-1{
           width: 50%;
           height: 800px;
-          border: 1px solid black;
           float: left;
           background-image: url($bg-cards-1);
           background-position: left;
@@ -259,25 +284,133 @@ a{
 
 
       .dark-box{
-        width: 47%;
+        width: 50%;
         height: 800px;
-        background-color: #030303;
+        background-color: #5c3d27;
+        padding-left: 100px;
         display: flex;
         flex-direction: row;
         justify-content: flex-start;
         align-items: center;
+        position: relative;
+      }
+
+      .title{
+        font-size: 65px;
+        color: #fff;
+        margin: 20px 0;
+        font-family: 'Bebas Neue', cursive;
     }
 
-    .vote li{
-        display:inline-block ;
-    }
+        
+      .bg-hover{
+         width: 750px;
+         height: 815px;
+         background-color: #5c3d27;
+         position: absolute;
+         top: -1%;
+         right: -3%;
+         display: none;
+        }
 
-    .hr{
-        border-top: 1px solid #fff;
-        width: 70px;
-        margin: 60px 0;
-    }
+        .dark-box:hover .bg-hover{
+            display: inline-block;
+        }
+
+        .vote li{
+            display:inline-block ;
+        }
+
+        .hr{
+            border-top: 1px solid #fff;
+            width: 70px;
+            margin: 60px 0;
+        }
+
   }
+  /* fine section 3 */
+
+  /* inizio section 4 */
+  .section4-contain{
+      width: 1400px;
+      height:800px;
+      margin: 50px auto;
+      border: 1px solid black;
+      display: flex;
+      justify-content: space-between;
+
+      .dark-box-contain{
+          margin-left: 100px;
+      }
+
+
+      .guardian-box{
+          width: 50%;
+          height: 800px;
+          background-image: url($bg-guardian);
+          background-size: cover;
+      }
+
+      .globe-box{
+          width: 50%;
+          height: 800px;
+          background-image: url($bg-globe);
+          background-size: cover;
+        }
+
+
+      .row-black{
+          height: 150px;
+          background-color: #030303;
+      }
+
+      .dark-box-contain{
+        width: 400px;
+        margin: 50px auto;
+        color: #d6cddb;
+        z-index: 3000;
+        
+        h6{
+            font-size: 16px;
+            margin-bottom: 40px;
+        }
+        
+        
+        p{
+            margin-top: 20px;
+            font-size: 19px;
+            line-height: 1.5;
+        }
+
+        .btn-article{
+            margin-top: 40px;
+            background: none;
+            border: 1px solid #fff;
+            padding: 10px 20px;
+            position: relative;
+        }
+
+        
+    }
+
+      .title{
+        font-size: 65px;
+        color: #fff;
+        margin: 20px 0;
+        font-family: 'Bebas Neue', cursive;
+      }
+
+        .vote li{
+            display:inline-block ;
+        }
+
+        .hr{
+            border-top: 1px solid #fff;
+            width: 70px;
+            margin: 60px 0;
+        }
+
+   }
 }
 
 #footer-container{
@@ -322,5 +455,11 @@ a{
   .copyright{
       height: 70px;
       background-color: #030303;
+  }
+
+  .copyright-content{
+      padding-top: 35px;
+      text-align: center;
+      color: #d6cddb;
   }
 }

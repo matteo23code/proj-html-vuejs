@@ -23,22 +23,15 @@
 
     .dark-box-contain{
         width: 400px;
-        margin-left: 50px;
         color: rgb(214, 214, 214);
-        transition: all 5s;
+        z-index: 3000;
         
         h6{
             font-size: 16px;
             margin-bottom: 40px;
         }
         
-        .title{
-            font-size: 95px;
-            color: #fff;
-            margin: 20px 0;
-            font-family: 'Bebas Neue', cursive;
-        }
-
+        
         p{
             margin-top: 20px;
             font-size: 19px;
@@ -79,3 +72,5 @@ $bg-rolls-hover: '../img/hover-image1.png';
 $bg-sushi: '../img/slider32x.jpg';
 $bg-cards-1: '../img/blog72x-800x916.jpg';
 $bg-footer: '../img/footer2x.jpg';
+$bg-guardian: '../img/info52x.jpg';
+$bg-globe: '../img/info12x.jpg';
